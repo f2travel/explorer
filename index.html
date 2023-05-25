@@ -10,83 +10,69 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        title {
-            font-size: 2em;
-        }
+    title {
+        font-size: 2em;
+    }
 
-        h2 {
-            font-size: 2em;
-        }
+    h2 {
+        font-size: 2em;
+    }
 
-        ol, ul {
-            list-style-type: none; /* リストマーカーを非表示にする */
-            padding: 0; /* 上下のパディングを0にする */
-            margin: 0; /* 上下のマージンを0にする */
-        }
+    ol, ul {
+        list-style-type: none; /* リストマーカーを非表示にする */
+        padding: 0; /* 上下のパディングを0にする */
+        margin: 0; /* 上下のマージンを0にする */
+    }
 
-        /* h3要素のスタイル修正 */
-        h3 {
-            font-size: 2em;
-            margin-bottom: 0.5em; /* h3要素の下マージンを調整する */
-        }
+    /* h3要素のスタイル修正 */
+    h3 {
+        font-size: 2em;
+        margin-bottom: 0.5em; /* h3要素の下マージンを調整する */
+    }
 
-        p {
-            font-size: 1em;
-        }
+    p {
+        font-size: 1em;
+    }
 
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        .reservation-button {
-            display: inline-block;
-            background-color: #ff628c;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 20px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
+    body {
+        margin: 0;
+        padding: 0;
+    }
 
-        .reservation-button:hover {
-           background-color: #ff85a1;
-        }
-          
-               
-               
-        .reservation-button {
-           display: inline-block;
-           background-color: #ff628c;
-           color: #fff;
-           padding: 10px 20px;
-           border-radius: 20px;
-           text-decoration: none;
-           position: relative;
-           overflow: hidden;
-        }
+    .reservation-button {
+        display: inline-block;
+        background-color: #ff628c;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 20px;
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+        transition: background-color 0.3s ease;
+    }
 
-        .reservation-button::after {
-           content: "";
-           position: absolute;
-           top: 100%;
-           left: 50%;
-           width: 120%;
-           height: 100%;
-           background-color: #ff85a1;
-           transform: translate(-50%, -50%) rotate(45deg);
-           transition: transform 0.3s ease;
-           z-index: -1;
-        }
+    .reservation-button::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 120%;
+        height: 100%;
+        background-color: #ff85a1;
+        transform: translate(-50%, -50%) rotate(45deg);
+        transition: transform 0.3s ease;
+        z-index: -1;
+    }
 
-        .reservation-button:hover::after {
-           transform: translate(-50%, -50%) rotate(225deg);
-        }
+    .reservation-button:hover::after {
+        transform: translate(-50%, -50%) rotate(225deg);
+    }
 
-        .reservation-button span {
-           position: relative;
-           z-index: 1;
-        }      
-    </style>
+    .reservation-button span {
+        position: relative;
+        z-index: 1;
+    }
+</style>        
     <title>【2023年度版】注目の海外旅行先15選！定番からブーム前夜の場所まで</title>
 </head>
 <body>
