@@ -44,18 +44,28 @@
         padding: 0; /* body要素のパディングを0にする */
     }
 
-    /* 予約ボタンのスタイル */
-    .reservation-button {
-        display: inline-block; /* 予約ボタンをインラインブロック要素にする */
-        background-color: #ff628c; /* 背景色をピンクに設定 */
-        color: #fff; /* テキスト色を白に設定 */
-        padding: 10px 20px; /* 上下左右のパディングを10px 20pxに設定 */
-        border-radius: 20px; /* ボーダーの角丸を20pxに設定 */
-        text-decoration: none; /* テキストの下線を削除 */
-        position: relative; /* 相対的な位置指定をする */
-        overflow: hidden; /* コンテンツのオーバーフローを隠す */
-        transition: background-color 0.3s ease; /* ホバー時の背景色変化にアニメーションを適用 */
-    }
+   .reservation-button {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    animation: rainbow 5s linear infinite;
+}
+
+@keyframes rainbow {
+    0% { background-color: red; }
+    14% { background-color: orange; }
+    28% { background-color: yellow; }
+    42% { background-color: green; }
+    57% { background-color: blue; }
+    71% { background-color: indigo; }
+    85% { background-color: violet; }
+    100% { background-color: red; }
+}
+
 
     /* 予約ボタンアフター要素のスタイル */
     .reservation-button::after {
