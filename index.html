@@ -51,6 +51,41 @@
         .reservation-button:hover {
            background-color: #ff85a1;
         }
+          
+               
+               
+        .reservation-button {
+           display: inline-block;
+           background-color: #ff628c;
+           color: #fff;
+           padding: 10px 20px;
+           border-radius: 20px;
+           text-decoration: none;
+           position: relative;
+           overflow: hidden;
+        }
+
+        .reservation-button::after {
+           content: "";
+           position: absolute;
+           top: 100%;
+           left: 50%;
+           width: 120%;
+           height: 100%;
+           background-color: #ff85a1;
+           transform: translate(-50%, -50%) rotate(45deg);
+           transition: transform 0.3s ease;
+           z-index: -1;
+        }
+
+        .reservation-button:hover::after {
+           transform: translate(-50%, -50%) rotate(225deg);
+        }
+
+        .reservation-button span {
+           position: relative;
+           z-index: 1;
+        }      
     </style>
     <title>【2023年度版】注目の海外旅行先15選！定番からブーム前夜の場所まで</title>
 </head>
