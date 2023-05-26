@@ -15,6 +15,11 @@
         font-size: 2em; /* タイトルの文字サイズを2倍に設定 */
     }
          
+   /* 目次の親要素のスタイル */
+#toc-container {
+  max-height: 300px; /* 最大の高さ */
+  overflow-y: auto; /* 垂直方向のスクロールバーを表示 */
+}
               
   /* 目次のスタイル */
   ul {
@@ -168,7 +173,7 @@
                    <h2 style="margin-bottom: 5px;"><span style="font-size: 1.5em;">旅行好き必見のトレンド先行予測ランキング！</span></h2>
 　　　　　　　　　　　　　<hr>
 　　　　　　　　　　　　　
-                     
+        <div id="toc-container">             
          <ul>
                      <h3>目次</h3>
             <li><a href="#item1">第1位 韓国🇰🇷</a></li>
@@ -182,7 +187,7 @@
             <li><a href="#item9">第9位 タイ🇹🇭</a></li>
             <li><a href="#item10">第10位 グアム🇬🇺</a></li>
           </ul>  
-            
+         </div> 
             <ol>    
                 <li>
                     <h3 id="item1">【第1位】韓国🇰🇷</h3>
