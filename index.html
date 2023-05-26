@@ -88,55 +88,45 @@
         padding: 0; /* body要素のパディングを0にする */
     }
 
-          /* 予約ボタンのスタイル */   
-    .reservation-button {
-    display: inline-block; /* 予約ボタンをインラインブロック要素にする */
-    color: #fff; /* テキスト色を白に設定 */
-    padding: 10px 20px; /* 上下左右のパディングを10px 20pxに設定 */
-    border-radius: 20px; /* ボーダーの角丸を20pxに設定 */
-    text-decoration: none; /* テキストの下線を削除 */
-    position: relative; /* 相対的な位置指定をする */
-    overflow: hidden; /* コンテンツのオーバーフローを隠す */
-    animation: rainbow 5s linear infinite; /* レインボーアニメーションを適用 */
+   /* 予約ボタンのスタイル */
+.reservation-button {
+  display: inline-block; /* インラインブロック要素にする */
+  color: #fff; /* テキスト色を白に設定 */
+  padding: 10px 20px; /* 上下左右のパディングを10px 20pxに設定 */
+  border-radius: 20px; /* ボーダーの角丸を20pxに設定 */
+  text-decoration: none; /* テキストの下線を削除 */
+  position: relative; /* 相対的な位置指定をする */
+  overflow: hidden; /* コンテンツのオーバーフローを隠す */
+  background-color: #4CAF50; /* エメラルドグリーンの背景色 */
 }
 
-@keyframes rainbow {
-    0% { background-color: red; } /* 最初のステップで赤色にする */
-    14% { background-color: orange; } /* 14%のステップでオレンジ色にする */
-    28% { background-color: yellow; } /* 28%のステップで黄色にする */
-    42% { background-color: green; } /* 42%のステップで緑色にする */
-    57% { background-color: blue; } /* 57%のステップで青色にする */
-    71% { background-color: indigo; } /* 71%のステップでインディゴ色にする */
-    85% { background-color: violet; } /* 85%のステップで紫色にする */
-    100% { background-color: red; } /* 最後のステップで再度赤色にする（ループする） */
+/* 予約ボタンのアフター要素のスタイル */
+.reservation-button::after {
+  content: ""; /* コンテンツを表示しない */
+  position: absolute; /* 絶対的な位置指定をする */
+  top: 100%; /* 親要素の下端からの距離を100%に設定 */
+  left: 50%; /* 親要素の左端からの距離を50%に設定 */
+  width: 120%; /* 幅を親要素の120%に設定 */
+  height: 100%; /* 高さを親要素と同じに設定 */
+  background-color: #4CAF50; /* エメラルドグリーンの背景色 */
+  transform: translate(-50%, -50%) rotate(45deg); /* 位置と回転を調整 */
+  transition: transform 0.3s ease; /* ホバー時のアフター要素の変化にアニメーションを適用 */
+  z-index: -1; /* アフター要素を背面に配置 */
+}
+
+/* 予約ボタンのホバー時のアフター要素のスタイル */
+.reservation-button:hover::after {
+  transform: translate(-50%, -50%) rotate(225deg); /* ホバー時のアフター要素の回転を調整 */
+}
+
+/* 予約ボタン内のテキストのスタイル */
+.reservation-button span {
+  position: relative; /* 相対的な位置指定をする */
+  z-index: 1; /* テキストを手前に配置 */
 }
 
 
-    /* 予約ボタンアフター要素のスタイル */
-    .reservation-button::after {
-        content: ""; /* コンテンツを表示しない */
-        position: absolute; /* 絶対的な位置指定をする */
-        top: 100%; /* 親要素の下端からの距離を100%に設定 */
-        left: 50%; /* 親要素の左端からの距離を50%に設定 */
-        width: 120%; /* 幅を親要素の120%に設定 */
-        height: 100%; /* 高さを親要素と同じに設定 */
-        background-color: #ff85a1; /* 背景色をピンクに設定 */
-        transform: translate(-50%, -50%) rotate(45deg); /* 位置と回転を調整 */
-        transition: transform 0.3s ease; /* ホバー時のアフター要素の変化にアニメーションを適用 */
-        z-index: -1; /* アフター要素を背面に配置 */
-    }
-
-
-    /* 予約ボタンホバー時のアフター要素のスタイル */
-    .reservation-button:hover::after {
-        transform: translate(-50%, -50%) rotate(225deg); /* ホバー時のアフター要素の回転を調整 */
-    }
-
-    /* 予約ボタン内のテキストのスタイル */
-    .reservation-button span {
-        position: relative; /* 相対的な位置指定をする */
-        z-index: 1; /* テキストを手前に配置 */
-    }
+        
 </style>  
            
     <title>魅惑の旅行先が満載！2023年の海外旅行先予測【ランキング10選】</title>
