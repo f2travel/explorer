@@ -34,115 +34,92 @@
   font-size: 36px;
   color: #ffffff;
   /* その他のスタイルや装飾を追加 */
-}
+  /* 共通スタイル */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
 
-h1 {
-  font-size: 30px;
-  text-align: center;
-  margin: 10px;
-}
+  /* タイトルのスタイル */
+  h1 {
+    font-size: calc(1.618rem + 1.618vw);
+    text-align: center;
+    margin: calc(0.618rem + 0.618vw);
+  }
 
-h2 {
-  font-size: 24px;
-  text-align: center;
-  margin: 10px;
-}
+  /* サブタイトルのスタイル */
+  h2 {
+    font-size: calc(1.382rem + 1.382vw);
+    text-align: center;
+    margin: calc(0.382rem + 0.382vw);
+  }
 
-nav {
-  background-color: #E8F0FE;
-  padding: 10px;
-  border-radius: 5px;
-}
+  /* セクションのスタイル */
+  section {
+    margin: calc(1.618rem + 1.618vw);
+  }
 
-section h3 {
-  margin-bottom: 10px;
-  border-bottom: 2px solid #000000;
-  display: inline-block;
-}
+  /* パラグラフのスタイル */
+  p {
+    font-size: calc(1rem + 0.618vw);
+    line-height: 1.618;
+    margin-bottom: calc(0.618rem + 0.618vw);
+  }
 
-.centered-heading {
-  text-align: center;
-}
+  /* 画像のスタイル */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: calc(0.618rem + 0.618vw) auto;
+  }
 
-.content-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-/* モバイルフレンドリーなCSS */
-
-/* レスポンシブなレイアウト */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* セクションのスタイル */
-section {
-  margin: 20px;
-}
-
-/* パラグラフのスタイル */
-p {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-/* 画像のスタイル */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 10px auto;
-}
-
-/* 目次のスタイル */
-nav {
-  background-color: #f2f2f2;
-  padding: 10px;
-}
-
-nav h3 {
-  font-size: 20px;
-  margin: 5px 0;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav li {
-  margin-bottom: 5px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-}
-
-/* 中央揃えの見出し */
-.centered-heading {
-  text-align: center;
-}
-
-/* レスポンシブな目次 */
-@media only screen and (max-width: 480px) {
+  /* 目次のスタイル */
   nav {
-    background-color: lightblue;
-    padding: 5px;
+    background-color: #f2f2f2;
+    padding: calc(0.618rem + 0.618vw);
   }
 
   nav h3 {
-    font-size: 16px;
+    font-size: calc(1.382rem + 1.382vw);
+    margin: calc(0.382rem + 0.382vw) 0;
   }
 
   nav ul {
-    padding: 5px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    margin-bottom: calc(0.382rem + 0.382vw);
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  /* 中央揃えの見出し */
+  .centered-heading {
+    text-align: center;
+  }
+
+  /* レスポンシブな目次 */
+  @media only screen and (max-width: 480px) {
+    nav {
+      background-color: lightblue;
+      padding: calc(0.382rem + 0.382vw);
+    }
+
+    nav h3 {
+      font-size: calc(1.382rem + 1.382vw);
+    }
+
+    nav ul {
+      padding: calc(0.382rem + 0.382vw);
+    }
   }
 </style>
 
