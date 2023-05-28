@@ -5,10 +5,5 @@
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
-   <url>
-      <loc>https://f2travel.github.io/explorer/korea-travel-guide.html</loc>
-      <lastmod>2023-05-24</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-   </url>
+   
 </urlset>
