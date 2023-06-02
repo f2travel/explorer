@@ -250,6 +250,17 @@
     </div>
   </div>
 </section>
+  
+  <a href="javascript:void(0);" onclick="showMoreContent()">もっと見る</a>
+
+  <script>
+    function showMoreContent() {
+      var hiddenElements = document.querySelectorAll('.spot.hidden');
+      for (var i = 0; i < hiddenElements.length; i++) {
+        hiddenElements[i].classList.remove('hidden');
+      }
+    }
+  </script>
 
 
   <section id="section2">
